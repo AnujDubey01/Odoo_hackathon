@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(WhatsApp\ Image\ 2024-06-29\ at\ 10.20.32_99602d88.jpg);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: rgb(67, 235, 75);
+    margin-bottom: 25px;
+    font-size: 30px;
+   
+}
+
+.container {
+    max-width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 2px solid #83d951;
+    border-radius: 18px;
+    box-shadow: 0 0 15px rgba(6, 1, 1, 0.1), 0 0 10px rgba(0, 255, 0, 1.5) inset;
+}
+
+.object {
+    margin: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+a{
+   color: #ccc;
+
+}
+
+button[type="submit"] {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0d9311;
+}
+
+span{
+    font-size: 18px;
+    font-weight: 550;
+    color: rgb(233, 247, 234);
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="odoo3.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>User Management System</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('register')">Register</a></li>
+                <li><a href="#" onclick="showSection('login')">Login</a></li>
+                <li><a href="#" onclick="showSection('profile')">Profile</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="register" class="hidden">
+                <h2>Register</h2>
+                <form id="registerForm">
+                    <label for="regUsername">Username:</label>
+                    <input type="text" id="regUsername" name="regUsername" required>
+                    <label for="regPassword">Password:</label>
+                    <input type="password" id="regPassword" name="regPassword" required>
+                    <button type="submit">Register</button>
+                </form>
+            </section>
+            <section id="login" class="hidden">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <label for="loginUsername">Username:</label>
+                    <input type="text" id="loginUsername" name="loginUsername" required>
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" name="loginPassword" required>
+                    <button type="submit">Login</button>
+                </form>
+            </section>
+            <section id="profile" class="hidden">
+                <h2>Profile</h2>
+                <div id="profileInfo">
+                    <p>Username: <span id="profileUsername"></span></p>
+                </div>
+                <button onclick="logout()">Logout</button>
+            </section>
+        </main>
+    </div>
+    <script src="odoo3.js"></script>
+</body>
+</html>
